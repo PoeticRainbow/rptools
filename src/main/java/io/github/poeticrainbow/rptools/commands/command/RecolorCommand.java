@@ -1,7 +1,7 @@
 package io.github.poeticrainbow.rptools.commands.command;
 
-import io.github.poeticrainbow.rptools.commands.Command;
 import io.github.poeticrainbow.rptools.commands.RegisteredCommands;
+import io.github.poeticrainbow.rptools.commands.SimpleCommand;
 import io.github.poeticrainbow.rptools.util.ColorPalette;
 import io.github.poeticrainbow.rptools.util.ColorUtil;
 import io.github.poeticrainbow.rptools.util.Image;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 import static io.github.poeticrainbow.rptools.util.ColorUtil.hex;
 
 public class RecolorCommand {
-    public static Command get() {
+    public static SimpleCommand get() {
         return RegisteredCommands.of("recolor", "file|dir file|dir [--mkdir] [--print] [--noremap] [--noblend]", RecolorCommand::execute);
     }
 
