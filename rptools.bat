@@ -1,0 +1,1 @@
+java -jar "%~dp0\build\libs\RPTools-1.0-SNAPSHOT-all.jar" %*

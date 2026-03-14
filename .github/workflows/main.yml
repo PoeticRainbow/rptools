@@ -22,3 +22,11 @@ jobs:
         with:
           name: artifacts
           path: build/libs/*
+      - name: Upload Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: |
+            build/libs/*-all.jar
+            rptools.bat
+            rptools.sh
