@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.gradleup.shadow' version '9.3.2'
 }
 
 group = 'io.github.poeticrainbow'
@@ -12,6 +13,8 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation("de.articdive:jnoise-pipeline:4.1.0")
 }
 
 jar {
